@@ -43,8 +43,8 @@ public class AmazingRings extends PApplet {
     static final int HEIGHT = 600;
     int x = 100;
     int x2 = 700;
-    int speed = 2147483647;
-    int speed2 = -2147483647;
+    int speed = 5;
+    int speed2 = -5;
     @Override
     public void settings() {
     	size(800, 600);
