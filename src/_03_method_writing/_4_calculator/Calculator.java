@@ -12,10 +12,39 @@ public class Calculator {
 		int number2 = Integer.parseInt(input2);
 		int task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
-
+		int number = 0;
 		// 3) Call the correct method depending on what option the user chooses
-		
-		// 4) Call the result() method and put the answer in a pop-up
+		if(task == 3) {
+			number = add(number1, number2);
+		}else if(task == 2) {
+			number = subtract(number1, number2);
+		}else if(task == 1) {
+			number = multiply(number1, number2);
+		}else if(task == 0) {
+			number = divide(number1, number2);
+		}
+		result(number);
+				// 4) Call the result() method and put the answer in a pop-up
+	}
+
+	private static int divide(int number1,  int number2) {
+		return number1 / number2;
+	}
+
+	private static int multiply(int number1,  int number2) {
+		return number1 * number2;
+	}
+
+	private static int subtract(int number1,  int number2) {
+		return number1 - number2;
+	}
+	
+	private static int add(int number1,  int number2) {
+		return number1 + number2;
+	}
+
+	private static void result(int number) {
+		JOptionPane.showMessageDialog(null, "Your answer is " + number);
 	}
 	
 	// 1) Make 4 static methods (add, subtract, multiply, divide)
@@ -23,7 +52,7 @@ public class Calculator {
 	//		and return the answer.
 	 
 	
-	// 2) Make a static method called " result" that takes a number
+	// 2) Make a static method called "result" that takes a number
 	//		as a parameter and returns the number in a string
 	//		EX: "Your answer is " + number;
 
