@@ -28,8 +28,13 @@ private static void skill4() {
 	}
 	String cars = JOptionPane.showInputDialog("How many cars do your family have.");
 	int car = Integer.parseInt(cars);
-	if() {
-		
+	if(car == 0) {
+		JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+	}else if(car == 1){
+		String model = JOptionPane.showInputDialog("Cool! What make is it?");
+		JOptionPane.showMessageDialog(null, "Nice, a " + model + "! That's a cool car!");
+	}else if (car >= 1){
+		JOptionPane.showMessageDialog(null, "Wow that's " + car * 4 + " many wheels.");
 	}
 }
 

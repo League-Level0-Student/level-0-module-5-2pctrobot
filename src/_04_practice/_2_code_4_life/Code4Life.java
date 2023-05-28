@@ -17,6 +17,7 @@ public class Code4Life {
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
+JOptionPane.showInputDiolog("");
 
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
